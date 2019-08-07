@@ -1,8 +1,20 @@
 1. Explain Node and V8 in your own words ?
-   // Answer here...
+   '''
+   Node.js = Runtime Environment ➕ #javascript Library
+   -> Node is a runtime environment for executing js code🖥️.
+   -> Node application is async by default👿.
+   -> Node uses a single-threaded🧬 model with event looping♻️.
+   '''
 
 2. Explain steps in REPL(here) and command to start REPL ?
-   // Answer here...
+
+   ```
+   REPL stants for `read eval print loop`
+   Read :- Read take the input from the user.
+   eval :- eval Process on the read data and process on it.
+   Print:- Print show the result thats comes from eval process.
+   Loop :- it's an continues process untills program can't terminates or end.
+   ```
 
 3. Run `index.js` in the same directory as script writer using `node FILE_NAME.js` and output result of console here.
 
@@ -11,7 +23,15 @@
 5. Explain Buffer and different methods to create a buffer ?
 
 6. What is blocking code ? How is it different from non-blocking/async codes ? Correct blocking code in index.js to run asynchronously ?
-   // Answer here ...
+
+   ```
+   As we all know js is an single thread lanuague. so it can handle one execution at a time.
+   so untill the last can't resolve engine is point to that process.
+   once previous one is completed its move to the next execution.
+   thats blocking on engine untill once is not completed is known as `blocking code`.
+   it's different because non-blocking or async code can't wait for previous one to complete.
+   In javascript its process task is assign to the thread and multiple task are having multiple thread. so when one thread task completed or data ready its push it to `event queue`. and event loop always check in the event queue for completed task. if task found its process on thats.
+   ```
 
 7. Request from browser `https://altcampus.io` and copy request, response and general headers into answer.js.
 
