@@ -4,6 +4,7 @@
    -> Node is a runtime environment for executing js code🖥️.
    -> Node application is async by default👿.
    -> Node uses a single-threaded🧬 model with event looping♻️.
+   V8 is an JS engine developed by chrome developer to run javascript in to browser.
    '''
 
 2. Explain steps in REPL(here) and command to start REPL ?
