@@ -9,24 +9,45 @@ var http = require("http");
 
 // 2. Write script to create a server, send in response the request headers
 // and add listener on port 6666.
-http
-  .createServer((req, res) => {
-    res.end(JSON.stringify(req.headers));
-  })
-  .listen(6861);
+// http
+//   .createServer((req, res) => {
+//     res.end(JSON.stringify(req.headers));
+//   })
+//   .listen(6861);
 
 // 3. create a server and console request methods and url by doing request
 // from postman or web browsers.
+// http
+//   .createServer((req, res) => {
+//     console.log(req.method, req.headers);
+//     res.end();
+//   })
+//   .listen(6861);
 
 // 4. create a server
 // - set response headers as 'text/html' using res.setHeader property.
 // - write some HTML content in response
 // - listen on port 6000
+// http
+//   .createServer((req, res) => {
+//     res.setHeader("Content-Type", "text/html");
+//     res.end("<h1>hello node</h1>");
+//   })
+//   .listen(6000);
 
 // 5. create a server
 // - create a seperate file index.html and write some html content
 // - read the html file content and send it in response in createServer method
 // - don't forget to set header before writing to response
+http
+  .createServer((req, res) => {
+    var fs = require("fs");
+    fs.readFile("index.html", (err, file) => {
+      res.setHeader("Content-Type", "text/html");
+      res.end(file);
+    });
+  })
+  .listen(6000);
 
 // 6. create a server
 // - create 3 diffenrent file ie. indx.html, about.html, contact.html
@@ -34,6 +55,7 @@ http
 // - '/' route for index.html file
 // - "/about" for about.html file
 // - "/contact" for contact.html file
+// http.createServer((req, res) => {});
 
 // 7. create an Server(echoServer)
 // handle post request for incoming data from postman using req as eventEmitter
