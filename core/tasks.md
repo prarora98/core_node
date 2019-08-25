@@ -15,6 +15,7 @@
    eval :- eval Process on the read data and process on it.
    Print:- Print show the result thats comes from eval process.
    Loop :- it's an continues process untills program can't terminates or end.
+   node to enter in a REPL mode.
    ```
 
 3. Run `index.js` in the same directory as script writer using `node FILE_NAME.js` and output result of console here.
