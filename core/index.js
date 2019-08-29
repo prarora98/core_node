@@ -17,8 +17,8 @@ var fs = require("fs");
 
 // change it to run it in non-blocking manner.
 // Observe the difference in blocking and non-blocking code.
-fs.readFile("theory.md", (err, res) => {
-  console.log(res);
+fs.readFile("theory.md", (err, file) => {
+  console.log(file);
 });
 console.log("run me first");
 
